@@ -1,0 +1,182 @@
+/* COLORS
+    purple: #4d1f79
+    yellow: #cac002
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+/* ---------- LINKS---------- */
+
+a:link {
+    text-decoration: none;
+    list-style: none;
+    color: orange;
+}
+
+.menu-icon:link,
+.menu-close:link, 
+.nav-links a:link {
+    color: #4d1f79;
+}
+
+.menu-icon:active,
+.menu-close:active, 
+.nav-links a:active,
+.menu-icon:hover,
+.menu-close:hover, 
+.nav-links a:hover {
+    color: #cac002;
+}
+
+.btn-help-us > a:link,
+.btn-help-us > a:visited {
+    text-decoration: none;
+    color: #cac002;
+    text-shadow: 
+    3px 3px 2px rgb(90, 89, 89); 
+}
+
+.btn-help-us > a:active,
+.btn-help-us > a:hover {
+    color: #000;
+}
+
+/* ---------- HEADER ---------- */
+
+header {
+    background-image: /* linear-gradient(rgba(0, 0, 0, 0.175), rgba(41, 2, 56, 00.175)), */ url(../img/86776604_3101472846745227_6351369286245679104_n.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+.header-flex {
+    height: 100vh;
+}
+
+.header-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+}
+
+.header-flex img {
+    width: 50vw;
+    height: 20vh;
+}
+
+.header-description-wrapper {
+    width: 100vw;
+    position: absolute;
+    top: 40vh;
+    display: flex;
+    justify-content: center;
+}
+
+.project-description {
+    width: 80vw;
+    margin: auto;
+    text-align: center; 
+    font-family: 'Antique Quest';
+    line-height: 200%;
+    font-size: 150%;
+    color: #cac002;
+    text-shadow: 1px 1px 1px #000,
+                 -1px -1px 1px #000,
+                 3px 3px 2px rgb(90, 89, 89); 
+
+}
+
+.button-wrapper {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-flex .btn-help-us {
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border-style: groove;
+    font-family: 'Courier New', monospace;
+    font-size: 1.5em;
+    font-weight: 600;
+    background-color:  #4d1f79;
+    box-shadow: 3px 3px 5px rgb(85, 84, 84);
+    transition: all 0.2s;
+}
+
+/* ---------- NAV ---------- */
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon.active {
+    display: block;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    font-size: 2.25em;
+}
+
+
+.nav-container {
+    display: none;
+}
+
+.nav-container.active {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 300px;
+    margin: 0;
+}
+
+.icon-wrapper {
+    width: 100%;
+    height: 5vh;
+}
+
+.icon-wrapper i {
+    font-size: 2em;
+    text-shadow: 1px 1px 2px rgb(66, 66, 66);
+    float: right;
+    position: relative;
+    top: 2vh;
+    right: 1vw;
+}
+
+.nav-links {
+    margin-top: 10vh;
+}
+
+.nav-links li {
+    font-size: 1.25em;
+    padding: 5vh 0;
+    text-shadow: 1px 1px 2px rgb(175, 175, 175);
+    font-family: 'Courier New', monospace;
+}
+
+
+/* ---------- @FONT-FACE ---------- */
+@font-face {
+    font-family: 'Antique Quest';
+    src: url(../../vendors/fonts/Antique\ Quest\ St.ttf);
+}
